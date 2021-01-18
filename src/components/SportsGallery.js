@@ -1,5 +1,4 @@
-import React from 'react'
-import Theme from '../Theme';
+import React from 'react';
 
 //Images
 import Sport1 from '../images/rugby.jpg';
@@ -14,7 +13,7 @@ import Sport9 from '../images/sports9.jpg';
 
 
 //MDBReact
-import { MDBRow,MDBContainer, MDBCol} from "mdbreact";
+import { MDBRow,MDBCol} from "mdbreact";
 
 const SportsGallery = () => {
     

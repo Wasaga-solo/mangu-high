@@ -1,6 +1,6 @@
 import React from 'react'
 import Theme from '../Theme'
-import { MDBCol, MDBContainer, MDBRow,MDBBtn,Link} from "mdbreact";
+import { MDBCol, MDBContainer, MDBRow,MDBBtn} from "mdbreact";
 
 const Advert = () => {
     return (
@@ -50,7 +50,7 @@ const Advert = () => {
                 <h5>SEE IMPORTANT CHANGES AND DETAILS FOR THIS SCHOOL YEAR IN THE  COVID-19 REAOPENING PLAN.</h5>
                 </MDBCol>
                 <MDBCol md="3">
-                <MDBBtn color="warning" className="covid-button"><a href="https://education.go.ke/images/COVID-19_GUIDELINES.pdf" target="_blank">COVID-19 PLAN</a></MDBBtn>
+                <MDBBtn color="warning" className="covid-button"><a href="https://education.go.ke/images/COVID-19_GUIDELINES.pdf" target="_blank" rel="noreferrer">COVID-19 PLAN</a></MDBBtn>
                 </MDBCol>
             </MDBRow>
         </MDBContainer>

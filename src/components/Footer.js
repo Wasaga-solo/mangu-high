@@ -136,9 +136,9 @@ const Footer = () => {
             </div>
 
         <div className="foot-social-icons">
-        <span className="icon-span-fb"><a href="https://m.facebook.com/profile.php?id=110372698991195" target="_blank"><i className="fa fa-facebook foot-icon" /></a></span>
-        <span className="icon-span-tw"><a href="https://twitter.com/manguhighschool?lang=en" target="_blank"><i className="fa fa-twitter foot-icon" /></a></span>
-        <span className="icon-span-ig"><a href="https://www.instagram.com/explore/locations/24731883/mangu-high-school/" target="_blank"><i className="fa fa-instagram foot-icon" /></a></span>
+        <span className="icon-span-fb"><a href="https://m.facebook.com/profile.php?id=110372698991195" target="_blank" rel="noreferrer"><i className="fa fa-facebook foot-icon" /></a></span>
+        <span className="icon-span-tw"><a href="https://twitter.com/manguhighschool?lang=en" target="_blank" rel="noreferrer"><i className="fa fa-twitter foot-icon" /></a></span>
+        <span className="icon-span-ig"><a href="https://www.instagram.com/explore/locations/24731883/mangu-high-school/" target="_blank" rel="noreferrer"><i className="fa fa-instagram foot-icon" /></a></span>
         </div>
           </MDBCol>
           <MDBCol md="4">
@@ -193,7 +193,7 @@ const Footer = () => {
       <div className="footer-copyright text-center py-3 last-footer">
         <MDBContainer fluid>
           Mang'u High School | Jishinde Ushinde | 
-          &copy; {new Date().getFullYear()} Copyright: Website by  <a href="https://github.com/Wasaga-solo?tab=repositories" target="_blank" className="my-name">WASAGA ELISHA COM/33/17</a>
+          &copy; {new Date().getFullYear()} Copyright: Website by  <a href="https://github.com/Wasaga-solo?tab=repositories" target="_blank"rel="noreferrer" className="my-name">WASAGA ELISHA COM/33/17</a>
         </MDBContainer>
       </div>
     </MDBFooter>

@@ -153,13 +153,13 @@ const Navigaton = () => {
     </Nav>
     <Nav>
     <Nav.Item as="li">
-    <a href="https://m.facebook.com/profile.php?id=110372698991195" target="_blank"><i className="fa fa-facebook nav-icon"/></a>
+    <a href="https://m.facebook.com/profile.php?id=110372698991195" target="_blank" rel="noreferrer"><i className="fa fa-facebook nav-icon"/></a>
     </Nav.Item>
     <Nav.Item as="li">
-    <a href="https://twitter.com/manguhighschool?lang=en" target="_blank"><i className="fa fa-twitter nav-icon"/></a>
+    <a href="https://twitter.com/manguhighschool?lang=en" target="_blank" rel="noreferrer"><i className="fa fa-twitter nav-icon"/></a>
     </Nav.Item>
     <Nav.Item as="li" >
-        <a href="https://www.instagram.com/explore/locations/24731883/mangu-high-school/" target="_blank"><i className="fa fa-instagram nav-icon" /></a>
+        <a href="https://www.instagram.com/explore/locations/24731883/mangu-high-school/" target="_blank" rel="noreferrer"><i className="fa fa-instagram nav-icon" /></a>
     </Nav.Item>
 
     </Nav>

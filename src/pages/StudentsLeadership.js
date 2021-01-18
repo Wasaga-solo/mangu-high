@@ -12,7 +12,7 @@ import
 from "react-bootstrap";
 
 //MDBReact
-import { MDBBtn,Link,MDBRow,MDBCol} from "mdbreact";
+import {MDBRow,MDBCol} from "mdbreact";
 
 const StudentsLeadership = () => {
     return (

@@ -11,11 +11,11 @@ import HomeSlide6 from '../images/home-slide6.jpg';
 
 //Bootstrap
 import
- { Carousel,Card,CardGroup,Nav,Button, } 
+ { Carousel,Card,CardGroup,Nav,} 
 from "react-bootstrap";
 
 //MDBReact
-import { MDBCol,MDBContainer, MDBRow,MDBBtn,Link,} from "mdbreact";
+import { MDBContainer, MDBRow,MDBBtn,Link,} from "mdbreact";
 
 const Home = () => {
 
@@ -394,7 +394,7 @@ const Home = () => {
   </Card>
   <Card className="card-wrap">
       <Card>
-      <iframe width="auto" height="200"
+      <iframe title="youtube" width="auto" height="200"
        src="https://www.youtube.com/embed/_wAQI_lgcIk">
      </iframe>
       </Card>
