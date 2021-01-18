@@ -3,7 +3,7 @@ import Theme from '../Theme';
 
 //Images
 import Alumni1 from '../images/mangu25.jpg';
-import Elisha from '../images/elisha.jpg';
+import Elisha from '../images/elisha.png';
 import Kibaki from '../images/kibaki.jpg';
 import Kimathi from '../images/kimathi.jpg';
 import Otunga from '../images/otunga.gif';
