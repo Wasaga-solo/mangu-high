@@ -313,7 +313,7 @@ const Home = () => {
       <h1 className="slide-title">The School President</h1>
       <p className="slide-text">Giving a special speech during the prize giving ceremony in 2018.</p>
       <MDBBtn color="warning" className="slide-buttons">
-          <Link to="/home" className="slide-button-link" >SEE MORE</Link>
+          <Link to="/" className="slide-button-link" >SEE MORE</Link>
       </MDBBtn>
     </Carousel.Caption>
   </Carousel.Item>
@@ -329,7 +329,7 @@ const Home = () => {
       <h1 className="slide-title">Mang'u High School Amphitheatre</h1>
       <p className="slide-text">That has a capacity of more than 3000 people..</p>
       <MDBBtn color="warning" className="slide-buttons">
-          <Link to="/home"className="slide-button-link" >SEE MORE</Link>
+          <Link to="/"className="slide-button-link" >SEE MORE</Link>
       </MDBBtn>
     </Carousel.Caption>
   </Carousel.Item>
