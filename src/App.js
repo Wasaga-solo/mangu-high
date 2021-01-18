@@ -22,7 +22,7 @@ import {
             <Layout>
            <Switch>
             <div className="mainbody">
-            <Route path="/home" exact render={(props)=><Home {...props}/>}/>
+            <Route path="/" exact render={(props)=><Home {...props}/>}/>
             <Route path="/about us" exact render={(props)=><AboutUs {...props}/>}/>       
             <Route path="/leadership/school governance" exact render={(props)=><SchoolGovernance {...props}/>}/>  
             <Route path="/enrollment" exact render={(props)=><Enrollment {...props}/>}/>  

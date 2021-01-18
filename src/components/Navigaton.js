@@ -125,7 +125,7 @@ const Navigaton = () => {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-    <Nav.Item><Nav.Link  ><Link to="/home">Home</Link></Nav.Link>
+    <Nav.Item><Nav.Link  ><Link to="/">Home</Link></Nav.Link>
     {shouldIndicatorShow('/home')}
     </Nav.Item>
     <Nav.Item><Nav.Link  ><Link to="/about us">About Us</Link></Nav.Link>

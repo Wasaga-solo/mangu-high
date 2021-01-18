@@ -184,7 +184,7 @@ const Footer = () => {
                 <Link to="/contact us">Contact Us</Link>
               </li>
               <li className="list-unstyled brand-links">
-                <Link to="/home">Home</Link>
+                <Link to="/">Home</Link>
               </li>
             </ul>
           </MDBCol>
