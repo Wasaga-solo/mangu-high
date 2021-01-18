@@ -249,7 +249,7 @@ const Home = () => {
       <h1 className="slide-title">Mang'u High School</h1>
       <p className="slide-text">President Uhuru Kenyatta greeting student leaders during his last visit to the school</p>
       <MDBBtn color="warning" className="slide-buttons">
-          <Link to="/home" className="slide-button-link" >SEE MORE</Link>
+          <Link to="/" className="slide-button-link" >SEE MORE</Link>
           </MDBBtn>
     </Carousel.Caption>
   </Carousel.Item>
@@ -266,7 +266,7 @@ const Home = () => {
       <h1 className="slide-title">President Uhuru Kenyatta</h1>
       <p className="slide-text">Alongside other leaders greeting the top student.</p>
       <MDBBtn color="warning" className="slide-buttons">
-          <Link to="/home" className="slide-button-link" >SEE MORE</Link>
+          <Link to="/" className="slide-button-link" >SEE MORE</Link>
         </MDBBtn>
     </Carousel.Caption>
   </Carousel.Item>
@@ -282,7 +282,7 @@ const Home = () => {
       <h1 className="slide-title">Administration Block</h1>
       <p className="slide-text">This was launched in 2015 by the BOG team</p>
       <MDBBtn color="warning" className="slide-buttons">
-          <Link to="/home" className="slide-button-link" >SEE MORE</Link>
+          <Link to="/" className="slide-button-link" >SEE MORE</Link>
       </MDBBtn>
     </Carousel.Caption>
   </Carousel.Item>
@@ -297,7 +297,7 @@ const Home = () => {
       <h1 className="slide-title">Mang'u High School</h1>
       <p className="slide-text">Form Ones and Twos on our anual career day.</p>
       <MDBBtn color="warning" className="slide-buttons">
-          <Link to="/home" className="slide-button-link" >SEE MORE</Link>
+          <Link to="/" className="slide-button-link" >SEE MORE</Link>
       </MDBBtn>
     </Carousel.Caption>
   </Carousel.Item>
