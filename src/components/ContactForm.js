@@ -3,6 +3,27 @@ import Theme from '../Theme';
 import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput,Link } from "mdbreact";
 
 const ContactForm = () => {
+  const [formData, setFormData] = React.useState({
+    name: '',
+    email: '',
+    subject: '',
+  });
+
+  const changeInput = event => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
+  }
+
+  const submitForm = () => {
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+    })
+  }
+
   return (
     <>
     <style type="text/css">
@@ -36,7 +57,9 @@ const ContactForm = () => {
   .contact-button-link:hover{
     color:${Theme.tertiaryColor};
 }
-    
+  .my-form-head{
+      color:${Theme.primaryColor};
+  }
     
     
     
@@ -57,7 +80,7 @@ const ContactForm = () => {
         <MDBCol lg="5" className="lg-0 mb-4">
           <MDBCard>
             <MDBCardBody>
-              <div className="form-header blue accent-1">
+              <div className="form-header blue accent-1 my-form-head">
                 <h3 className="mt-2">
                   <MDBIcon icon="envelope" /> Write to us:
                 </h3>
@@ -68,6 +91,9 @@ const ContactForm = () => {
                   iconClass="grey-text"
                   type="text"
                   id="form-name"
+                  value={formData.name}
+                  name="name"
+                  onChange={changeInput}
                 />
               </div>
               <div className="md-form">
@@ -76,6 +102,9 @@ const ContactForm = () => {
                   iconClass="grey-text"
                   type="text"
                   id="form-email"
+                  value={formData.email}
+                  name="email"
+                  onChange={changeInput}
                 />
               </div>
               <div className="md-form">
@@ -84,10 +113,13 @@ const ContactForm = () => {
                   iconClass="grey-text"
                   type="text"
                   id="form-subject"
+                  value={formData.subject}
+                  name="subject"
+                  onChange={changeInput}
                 />
               </div>
               <div className="text-center">
-                <MDBBtn className="contact-button"><Link className="contact-button-link">SUBMIT</Link></MDBBtn>
+                <MDBBtn className="contact-button" type="submit" onClick={submitForm}><Link className="contact-button-link">SUBMIT</Link></MDBBtn>
               </div>
             </MDBCardBody>
           </MDBCard>

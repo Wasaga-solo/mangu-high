@@ -136,9 +136,9 @@ const Footer = () => {
             </div>
 
         <div className="foot-social-icons">
-        <span className="icon-span-fb"><a href="https://www.instagram.com/" target="_blank"><i className="fa fa-facebook foot-icon" /></a></span>
-        <span className="icon-span-tw"><a href="https://www.instagram.com/" target="_blank"><i className="fa fa-twitter foot-icon" /></a></span>
-        <span className="icon-span-ig"><a href="https://www.instagram.com/" target="_blank"><i className="fa fa-instagram foot-icon" /></a></span>
+        <span className="icon-span-fb"><a href="https://m.facebook.com/profile.php?id=110372698991195" target="_blank"><i className="fa fa-facebook foot-icon" /></a></span>
+        <span className="icon-span-tw"><a href="https://twitter.com/manguhighschool?lang=en" target="_blank"><i className="fa fa-twitter foot-icon" /></a></span>
+        <span className="icon-span-ig"><a href="https://www.instagram.com/explore/locations/24731883/mangu-high-school/" target="_blank"><i className="fa fa-instagram foot-icon" /></a></span>
         </div>
           </MDBCol>
           <MDBCol md="4">
@@ -163,19 +163,19 @@ const Footer = () => {
             <h4 className="title brand-name brand-footer">Quick Links</h4>
             <ul className="links-list">
               <li className="list-unstyled brand-links">
-                <Link to="about us">About Us</Link>
+                <Link to="/about us">About Us</Link>
               </li>
               <li className="list-unstyled brand-links">
-                <Link to="school governance">School Governance</Link>
+                <Link to="/leadership/school governance">School Governance</Link>
               </li>
               <li className="list-unstyled brand-links">
                 <Link to="/enrollment">Enrollment</Link>
               </li>
               <li className="list-unstyled brand-links">
-                <Link to="/students leadership">Students Leadership</Link>
+                <Link to="/leadership/students leadership">Students Leadership</Link>
               </li>
               <li className="list-unstyled brand-links">
-                <Link to="/staff directory">Staff Directory</Link>
+                <Link to="/sports">Sports</Link>
               </li>
               <li className="list-unstyled brand-links">
                 <Link to="/alumni">Alumni</Link>

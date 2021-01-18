@@ -1,5 +1,6 @@
 import React from 'react';
-import Theme from '../Theme'
+import Theme from '../Theme';
+import NavIndicator from './NavIndicator';
 
 
 //Bootstrap
@@ -10,12 +11,25 @@ from "react-bootstrap";
 //React-router-dom
 import { 
     Link,
+    useLocation,
     } from 'react-router-dom';
   
 //Styles
 import '../App.css';
 
 const Navigaton = () => {
+  const location = useLocation();
+
+  const shouldIndicatorShow = targetUrl => {
+    if(targetUrl === "/leadership") {
+      if(location.pathname.startsWith(targetUrl)) {
+        return <NavIndicator/>
+      }
+    }
+    if(targetUrl === location.pathname) {
+      return <NavIndicator />
+    }
+  }
     return (
         <>
  <style type="text/css">
@@ -111,26 +125,41 @@ const Navigaton = () => {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-    <Nav.Link  ><Link to="/home">Home</Link></Nav.Link>
-    <Nav.Link  ><Link to="/about us">About Us</Link></Nav.Link>
-      <Nav.Link  ><Link to="/enrollment">Enrollment</Link></Nav.Link>
-      <Nav.Link ><Link to="/alumni">Alumni</Link></Nav.Link>
-      <NavDropdown title="Community" id="collasible-nav-dropdown">
-        <NavDropdown.Item ><Link to="/school governance">School Governance</Link></NavDropdown.Item>
-        <NavDropdown.Item ><Link to="/staff directory">Staff Directory</Link></NavDropdown.Item>
-        <NavDropdown.Item ><Link to="/students leadership">Students Leadership</Link></NavDropdown.Item>
+    <Nav.Item><Nav.Link  ><Link to="/home">Home</Link></Nav.Link>
+    {shouldIndicatorShow('/home')}
+    </Nav.Item>
+    <Nav.Item><Nav.Link  ><Link to="/about us">About Us</Link></Nav.Link>
+    {shouldIndicatorShow('/about us')}
+    </Nav.Item>
+      <Nav.Item><Nav.Link  ><Link to="/enrollment">Enrollment</Link></Nav.Link>
+      {shouldIndicatorShow('/enrollment')}
+      </Nav.Item>
+      <Nav.Item><Nav.Link ><Link to="/alumni">Alumni</Link></Nav.Link>
+      {shouldIndicatorShow('/alumni')}
+      </Nav.Item>
+      <Nav.Item><Nav.Link ><Link to="/sports">Sports</Link></Nav.Link>
+      {shouldIndicatorShow('/sports')}
+      </Nav.Item>
+      <Nav.Item>
+      <NavDropdown title="Leadership" id="collasible-nav-dropdown">
+        <NavDropdown.Item ><Link to="/leadership/school governance">School Governance</Link></NavDropdown.Item>
+        <NavDropdown.Item ><Link to="/leadership/students leadership">Students Leadership</Link></NavDropdown.Item>
       </NavDropdown>
-      <Nav.Link ><Link to="/contact us">Contact Us</Link></Nav.Link>
+      {shouldIndicatorShow('/leadership')}
+      </Nav.Item>
+      <Nav.Item><Nav.Link ><Link to="/contact us">Contact Us</Link></Nav.Link>
+      {shouldIndicatorShow('/contact us')}
+      </Nav.Item>
     </Nav>
     <Nav>
     <Nav.Item as="li">
-    <a href="https://www.instagram.com/" target="_blank"><i className="fa fa-facebook nav-icon"/></a>
+    <a href="https://m.facebook.com/profile.php?id=110372698991195" target="_blank"><i className="fa fa-facebook nav-icon"/></a>
     </Nav.Item>
     <Nav.Item as="li">
-    <a href="https://www.instagram.com/" target="_blank"><i className="fa fa-twitter nav-icon"/></a>
+    <a href="https://twitter.com/manguhighschool?lang=en" target="_blank"><i className="fa fa-twitter nav-icon"/></a>
     </Nav.Item>
     <Nav.Item as="li" >
-        <a href="https://www.instagram.com/" target="_blank"><i className="fa fa-instagram nav-icon" /></a>
+        <a href="https://www.instagram.com/explore/locations/24731883/mangu-high-school/" target="_blank"><i className="fa fa-instagram nav-icon" /></a>
     </Nav.Item>
 
     </Nav>

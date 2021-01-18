@@ -5,7 +5,7 @@ import AboutUs from './pages/AboutUs';
 import SchoolGovernance from './pages/SchoolGovernance';
 import Enrollment from './pages/Enrollment';
 import StudentsLeadership from './pages/StudentsLeadership';
-import SatffDirectory from './pages/StaffDirectory';
+import Sports from './pages/Sports';
 import Alumni from './pages/Alumni';
 import ContactUs from './pages/ContactUs';
 
@@ -24,10 +24,10 @@ import {
             <div className="mainbody">
             <Route path="/home" exact render={(props)=><Home {...props}/>}/>
             <Route path="/about us" exact render={(props)=><AboutUs {...props}/>}/>       
-            <Route path="/school governance" exact render={(props)=><SchoolGovernance {...props}/>}/>  
+            <Route path="/leadership/school governance" exact render={(props)=><SchoolGovernance {...props}/>}/>  
             <Route path="/enrollment" exact render={(props)=><Enrollment {...props}/>}/>  
-            <Route path="/students leadership" exact render={(props)=><StudentsLeadership {...props}/>}/>  
-            <Route path="/staff directory" exact render={(props)=><SatffDirectory {...props}/>}/>  
+            <Route path="/leadership/students leadership" exact render={(props)=><StudentsLeadership {...props}/>}/>  
+            <Route path="/sports" exact render={(props)=><Sports {...props}/>}/>  
             <Route path="/alumni" exact render={(props)=><Alumni {...props}/>}/> 
             <Route path="/contact us" exact render={(props)=><ContactUs {...props}/>}/>  
             </div>

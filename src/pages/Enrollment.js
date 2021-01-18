@@ -108,7 +108,6 @@ const Enrollment = () => {
   top:50px;
   padding:50px;
   font-family: 'Cantata One', serif;
-  position:relative;
   top:-100px;
 }
 .enroll-submit{
@@ -203,7 +202,7 @@ const Enrollment = () => {
                 </div>
             </MDBRow>
             <MDBRow md="3" className="register-end" >
-                <MDBBtn className="register-end register-button"><Link className="register-button-link"  to="/join our team">REGISTER</Link></MDBBtn>
+                <MDBBtn className="register-end register-button"><Link className="register-button-link"  to="/contact us">REGISTER</Link></MDBBtn>
             </MDBRow>
         </div>
 </MDBContainer>
