@@ -125,29 +125,29 @@ const Navigaton = () => {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-    <Nav.Item><Nav.Link  ><Link to="/">Home</Link></Nav.Link>
+    <Nav.Item><Nav.Link eventKey="1" ><Link to="/">Home</Link></Nav.Link>
     {shouldIndicatorShow('/home')}
     </Nav.Item>
-    <Nav.Item><Nav.Link  ><Link to="/about us">About Us</Link></Nav.Link>
+    <Nav.Item><Nav.Link  eventKey="2"><Link to="/about us">About Us</Link></Nav.Link>
     {shouldIndicatorShow('/about us')}
     </Nav.Item>
-      <Nav.Item><Nav.Link  ><Link to="/enrollment">Enrollment</Link></Nav.Link>
+      <Nav.Item><Nav.Link eventKey="3" ><Link to="/enrollment">Enrollment</Link></Nav.Link>
       {shouldIndicatorShow('/enrollment')}
       </Nav.Item>
-      <Nav.Item><Nav.Link ><Link to="/alumni">Alumni</Link></Nav.Link>
+      <Nav.Item><Nav.Link eventKey="4"><Link to="/alumni">Alumni</Link></Nav.Link>
       {shouldIndicatorShow('/alumni')}
       </Nav.Item>
-      <Nav.Item><Nav.Link ><Link to="/sports">Sports</Link></Nav.Link>
+      <Nav.Item><Nav.Link eventKey="5"><Link to="/sports">Sports</Link></Nav.Link>
       {shouldIndicatorShow('/sports')}
       </Nav.Item>
       <Nav.Item>
       <NavDropdown title="Leadership" id="collasible-nav-dropdown">
-        <NavDropdown.Item ><Link to="/leadership/school governance">School Governance</Link></NavDropdown.Item>
-        <NavDropdown.Item ><Link to="/leadership/students leadership">Students Leadership</Link></NavDropdown.Item>
+        <NavDropdown.Item eventKey="6"><Link to="/leadership/school governance">School Governance</Link></NavDropdown.Item>
+        <NavDropdown.Item eventKey="7"><Link to="/leadership/students leadership">Students Leadership</Link></NavDropdown.Item>
       </NavDropdown>
       {shouldIndicatorShow('/leadership')}
       </Nav.Item>
-      <Nav.Item><Nav.Link ><Link to="/contact us">Contact Us</Link></Nav.Link>
+      <Nav.Item><Nav.Link eventKey="8"><Link to="/contact us">Contact Us</Link></Nav.Link>
       {shouldIndicatorShow('/contact us')}
       </Nav.Item>
     </Nav>
